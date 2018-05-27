@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.xtext.example.xmleditor
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.xtext.example.xmleditor
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.eclipse.xtext.example.xmleditor; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.eclipse.xtend.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.generator;bundle-version="2.14.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.eclipse.xtext.example.xmleditor,
+ org.eclipse.xtext.example.xmleditor.generator,
+ org.eclipse.xtext.example.xmleditor.parser.antlr,
+ org.eclipse.xtext.example.xmleditor.parser.antlr.internal,
+ org.eclipse.xtext.example.xmleditor.scoping,
+ org.eclipse.xtext.example.xmleditor.serializer,
+ org.eclipse.xtext.example.xmleditor.services,
+ org.eclipse.xtext.example.xmleditor.simplexml,
+ org.eclipse.xtext.example.xmleditor.simplexml.impl,
+ org.eclipse.xtext.example.xmleditor.simplexml.util,
+ org.eclipse.xtext.example.xmleditor.validation,
+ org.eclipse.xtext.example.xmleditor.parser.antlr.lexer
+Import-Package: org.apache.log4j
